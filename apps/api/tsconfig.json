@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "module": "commonjs",
+    "target": "ES2022",
+    "paths": {
+      "@station/config/*": ["../../packages/config/src/*"],
+      "@station/auth/*": ["../../packages/auth/src/*"],
+      "@station/types/*": ["../../packages/types/src/*"],
+      "@station/ai/*": ["../../packages/ai/src/*"]
+    }
+  },
+  "include": ["src/**/*.ts"]
+}
