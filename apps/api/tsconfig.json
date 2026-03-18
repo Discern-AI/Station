@@ -1,16 +1,14 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
+    "target": "ES2020",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
     "outDir": "dist",
     "rootDir": "src",
-    "module": "commonjs",
-    "target": "ES2022",
-    "paths": {
-      "@station/config/*": ["../../packages/config/src/*"],
-      "@station/auth/*": ["../../packages/auth/src/*"],
-      "@station/types/*": ["../../packages/types/src/*"],
-      "@station/ai/*": ["../../packages/ai/src/*"]
-    }
+    "strict": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true
   },
-  "include": ["src/**/*.ts"]
+  "include": ["src"]
 }
